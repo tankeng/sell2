@@ -15,7 +15,7 @@ cl.login(token="EpFVlYr1152GzNThGWDa.ScFjCUWZY2oU7YzWFlMgcG.41cRUpb+wCeKgk4pdZ2G
 cl.loginResult()
 
 ki1 = LINETCR.LINE()
-ki1.login(token="EpKvbigirC1topbxKcN9.QqUY5RXmnjX22QWyhYRVYq.Df8IyTZhhp+XDWKuYHRtqfK54Op+tLZmLWnTEJXcCA4=")
+ki1.login(token="EpMna735UUuQkMoEW8l9.QqUY5RXmnjX22QWyhYRVYq./t16OcJfgg1+8YBbgb1fclWF1ngF6FRKI9ZOAWUJGjU=")
 ki1.loginResult()
 
 #ki2 = LINETCR.LINE()

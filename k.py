@@ -14,9 +14,9 @@ cl = LINETCR.LINE()
 cl.login(token="EpFVlYr1152GzNThGWDa.ScFjCUWZY2oU7YzWFlMgcG.41cRUpb+wCeKgk4pdZ2GbhC+V3fr7LqZIulprk88YL8=")
 cl.loginResult()
 
-ki1 = LINETCR.LINE()
-ki1.login(token="EpMna735UUuQkMoEW8l9.QqUY5RXmnjX22QWyhYRVYq./t16OcJfgg1+8YBbgb1fclWF1ngF6FRKI9ZOAWUJGjU=")
-ki1.loginResult()
+#ki1 = LINETCR.LINE()
+#ki1.login(token="EpMna735UUuQkMoEW8l9.QqUY5RXmnjX22QWyhYRVYq./t16OcJfgg1+8YBbgb1fclWF1ngF6FRKI9ZOAWUJGjU=")
+#ki1.loginResult()
 
 #ki2 = LINETCR.LINE()
 #ki2.login(token="Eoanj57G8zVmnx1Lbcq0.+ZViS46tqNx/xW3+/xvqWa.7OEC6oc00qyDxg4oyNPkxUPR6cp4NQtisWXcXsisb04=")
@@ -289,9 +289,9 @@ helpMessage4 ="""
 ║✰ บินแม่ง ➠สั่งคิกเกอร์บินห้อง
 ╚══════════════════════
 """
-KAC=[cl,ki1]
+KAC=[cl]
 mid = cl.getProfile().mid
-Amid1 = ki1.getProfile().mid
+#Amid1 = ki1.getProfile().mid
 #Amid2 = ki2.getProfile().mid
 #Amid3 = ki3.getProfile().mid
 #Amid4 = ki4.getProfile().mid
@@ -310,8 +310,8 @@ autoinvite = []
 autoleaveroom = []
 targets = []
 mid = cl.getProfile().mid
-Bots = ["ub027c972ec33cb63aeef26707cb9860a",Amid1]
-self = ["ub027c972ec33cb63aeef26707cb9860a",Amid1]
+Bots = ["ub027c972ec33cb63aeef26707cb9860a",mid]
+self = ["ub027c972ec33cb63aeef26707cb9860a",mid]
 admin = "ub027c972ec33cb63aeef26707cb9860a"
 admsa = "ub027c972ec33cb63aeef26707cb9860a"
 owner = "ub027c972ec33cb63aeef26707cb9860a"

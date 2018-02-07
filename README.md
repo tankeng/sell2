@@ -1,1 +1,1 @@
-#SELFBOT PHET HACK BOT
+SELFBOT By:™ചচ✾ъπ່७✾ざণاعနัю❍ีざန

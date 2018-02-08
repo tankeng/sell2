@@ -6424,15 +6424,9 @@ http://line.me/ti/p/09T2waRE7l
             if wait["acommentOn"] == True:
                 if op.param2 in Bots:
                     return
-                cl.sendText(op.param1,cl.getContact(op.param2).displayName + "\n" + str(wait["acomment"]))
+                cl.sendText(op.param1,cl.getContact(op.param2).displayName + "\n" + str(wait["acomment"]) + "\n" + contact.pictureStatus)
                 print "MEMBER HAS JOIN THE GROUP"
-		
-	if op.type == 17:
-            if wait["acommentOn"] == True:
-                if op.param2 in Bots:
-                    return
-                cl.sendText(op.param1,cl.getContact(op.param2).contact.pictureStatus
-                	
+	
 
         if op.type == 19:
             if wait["ccommentOn"] == True:

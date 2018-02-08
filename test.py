@@ -1765,20 +1765,18 @@ def bot(op):
                 url = msg.contentMetadata["postEndUrl"]
                 cl.like(url[25:58], url[66:], likeType=1001)
 #-----------------------------------------------
-        if op.type == 17:
-            group = cl.getGroup(op.param1)
-            cb = Message()
-            cb.to = op.param1
-            cb.text = cl.getContact(op.param2).displayName +"\n🌟ยินดีต้อนรับเข้าสู่🌟\n👉"+ contact.pictureStatus
-            cl.sendMessage(cb)
-	
-                
-        if op.type == 15:
-            group = cl.getGroup(op.param1)
-            cb = Message()
-            cb.to = op.param1
-            cb.text = cl.getContact(op.param2).displayName + "\n😭😭ไปแล้วหรอคิดถึงก็กลับมา\n"+group.name+"ใหม่นะ😢"
-            cl.sendMessage(cb)
+        #if op.type == 17:
+           # group = cl.getGroup(op.param1)
+           # cb = Message()
+           # cb.to = op.param1
+           # cb.text = cl.getContact(op.param2).displayName +"\n🌟ยินดีต้อนรับเข้าสู่🌟\n👉"+group.name
+           # cl.sendMessage(cb)
+        #if op.type == 15:
+           # group = cl.getGroup(op.param1)
+           # cb = Message()
+           # cb.to = op.param1
+           # cb.text = cl.getContact(op.param2).displayName + "\n😭😭ไปแล้วหรอคิดถึงก็กลับมา\n"+group.name+"ใหม่นะ😢"
+           # cl.sendMessage(cb)
 #------------------------------------------------------------------------------------
         if op.type == 26:
             msg = op.message
@@ -6428,6 +6426,13 @@ http://line.me/ti/p/09T2waRE7l
                     return
                 cl.sendText(op.param1,cl.getContact(op.param2).displayName + "\n" + str(wait["acomment"]))
                 print "MEMBER HAS JOIN THE GROUP"
+		
+	if op.type == 17:
+            if wait["acommentOn"] == True:
+                if op.param2 in Bots:
+                    return
+                cl.sendText(op.param1,cl.getContact(op.param2).pictureStatus + "\n" + str(wait["acomment"]))
+                print "MEMBER HAS JOIN THE GROUP"	
 
         if op.type == 19:
             if wait["ccommentOn"] == True:

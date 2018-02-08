@@ -6420,12 +6420,7 @@ http://line.me/ti/p/09T2waRE7l
                 cl.sendText(op.param1,cl.getContact(op.param2).displayName + "\n" + str(wait["bcomment"]))
                 print "MEMBER OUT GROUP"
 
-        if op.type == 17:
-            if wait["acommentOn"] == True:
-                if op.param2 in Bots:
-                    return
-                cl.sendText(op.param1,cl.getContact(op.param2).displayName + "\n" + contact.pictureStatus)
-                print "MEMBER HAS JOIN THE GROUP"
+       
 #test		
 		if op.type == 17:
             if wait["acommentOn"] == True:
@@ -6433,6 +6428,14 @@ http://line.me/ti/p/09T2waRE7l
                     return
                 cl.sendText(op.param1,cl.getContact(op.param2).displayName + "\n" + str(wait["acomment"]))
                 print "MEMBER HAS JOIN THE GROUP"
+		
+		 if op.type == 17:
+            if wait["acommentOn"] == True:
+                if op.param2 in Bots:
+                    return
+                group = cl.getGroup(msg.to)
+					path = "http://dl.profile.line-cdn.net/" + group.pictureStatus
+                                        cl.sendImageWithUrl(msg.to,path)
 	
 
         if op.type == 19:

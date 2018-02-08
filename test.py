@@ -1772,8 +1772,10 @@ def bot(op):
             cb.text = cl.getContact(op.param2).displayName +"\n🌟ยินดีต้อนรับเข้าสู่🌟\n👉"+group.name
             cl.sendMessage(cb)
 	contact = cl.getContact(target)
-                                    path = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
-                                    cl.sendImageWithUrl(msg.to, path)
+		cb = Message()
+		cb.to = op.param1
+                cb.text = cl.getContact(op.param2).contact.pictureStatus
+                cl.sendImageWithUrl
         if op.type == 15:
             group = cl.getGroup(op.param1)
             cb = Message()

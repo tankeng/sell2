@@ -1769,7 +1769,7 @@ def bot(op):
             group = cl.getGroup(op.param1)
             cb = Message()
             cb.to = op.param1
-            cb.text = cl.getContact(op.param2).displayName +"\n🌟ยินดีต้อนรับเข้าสู่🌟\n👉"+group.name +"\n" contact.pictureStatus
+            cb.text = cl.getContact(op.param2).displayName +"\n🌟ยินดีต้อนรับเข้าสู่🌟\n👉"+ contact.pictureStatus
             cl.sendMessage(cb)
 	
                 

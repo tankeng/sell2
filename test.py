@@ -1767,15 +1767,13 @@ def bot(op):
 #-----------------------------------------------
         if op.type == 17:
             group = cl.getGroup(op.param1)
+	contact = cl.getContact(op.param1)
             cb = Message()
             cb.to = op.param1
-            cb.text = cl.getContact(op.param2).displayName +"\n🌟ยินดีต้อนรับเข้าสู่🌟\n👉"+group.name
+            cb.text = cl.getContact(op.param2).displayName +"\n🌟ยินดีต้อนรับเข้าสู่🌟\n👉"+group.name + contact.pictureStatus
             cl.sendMessage(cb)
-	contact = cl.getContact(target)
-		cb = Message()
-		cb.to = op.param1
-                cb.text = cl.getContact(op.param2).contact.pictureStatus
-                cl.sendImageWithUrl
+	
+                
         if op.type == 15:
             group = cl.getGroup(op.param1)
             cb = Message()

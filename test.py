@@ -1769,14 +1769,14 @@ def bot(op):
             group = cl.getGroup(op.param1)
             cb = Message()
             cb.to = op.param1
-            cb.text = cl.getContact(op.param2).displayName +"\n🌟ยินดีต้อนรับเข้าสู่🌟\n👉"+group.name + contact.pictureStatus
+            cb.text = cl.getContact(op.param2).displayName +"\n🌟ยินดีต้อนรับเข้าสู่🌟\n👉"+group.name
             cl.sendMessage(cb)
-        #if op.type == 15:
-           # group = cl.getGroup(op.param1)
-           # cb = Message()
-           # cb.to = op.param1
-           # cb.text = cl.getContact(op.param2).displayName + "\n😭😭ไปแล้วหรอคิดถึงก็กลับมา\n"+group.name+"ใหม่นะ😢"
-           # cl.sendMessage(cb)
+        if op.type == 15:
+            group = cl.getGroup(op.param1)
+            cb = Message()
+            cb.to = op.param1
+            cb.text = cl.getContact(op.param2).displayName + "\n😭😭ไปแล้วหรอคิดถึงก็กลับมา\n"+group.name+"ใหม่นะ😢"
+            cl.sendMessage(cb)
 #------------------------------------------------------------------------------------
         if op.type == 26:
             msg = op.message

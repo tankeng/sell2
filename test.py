@@ -6421,21 +6421,19 @@ http://line.me/ti/p/09T2waRE7l
                 print "MEMBER OUT GROUP"
 
        
-#test		
+	
 		if op.type == 17:
             if wait["acommentOn"] == True:
                 if op.param2 in Bots:
                     return
                 cl.sendText(op.param1,cl.getContact(op.param2).displayName + "\n" + str(wait["acomment"]))
-                print "MEMBER HAS JOIN THE GROUP"
-		
-		 if op.type == 17:
-            if wait["acommentOn"] == True:
-                if op.param2 in Bots:
+	if op.param2 in Bots:
                     return
                 group = cl.getGroup(msg.to)
 					path = "http://dl.profile.line-cdn.net/" + group.pictureStatus
-                                        cl.sendImageWithUrl(msg.to,path)
+                                        cl.sendImageWithUrl(msg.to,path)	
+                print "MEMBER HAS JOIN THE GROUP"
+	
 	
 
         if op.type == 19:

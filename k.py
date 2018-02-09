@@ -14,17 +14,17 @@ cl = LINETCR.LINE()
 cl.login(token="EpFVlYr1152GzNThGWDa.ScFjCUWZY2oU7YzWFlMgcG.41cRUpb+wCeKgk4pdZ2GbhC+V3fr7LqZIulprk88YL8=")
 cl.loginResult()
 
-#ki1 = LINETCR.LINE()
-#ki1.login(token="EpMna735UUuQkMoEW8l9.QqUY5RXmnjX22QWyhYRVYq./t16OcJfgg1+8YBbgb1fclWF1ngF6FRKI9ZOAWUJGjU=")
-#ki1.loginResult()
+ki1 = LINETCR.LINE()
+ki1.login(token="Epb7ok4zmCZNVv0gRiM9.glvUGMKIz5ylyjKrZRIckq.dzpz1VtmGvzN8oUDZc0zzW54GiFbeuJ4kPV/l7oEipU=")
+ki1.loginResult()
 
-#ki2 = LINETCR.LINE()
-#ki2.login(token="Eoanj57G8zVmnx1Lbcq0.+ZViS46tqNx/xW3+/xvqWa.7OEC6oc00qyDxg4oyNPkxUPR6cp4NQtisWXcXsisb04=")
-#ki2.loginResult()
+ki2 = LINETCR.LINE()
+ki2.login(token="Epxfu6saRUAFlOrAt3Ua.gTcG3a066nCBC02KOU2wEG./lv0I9mfnfnP9ND7qD95iiAcloVUaJZeS7Jj+aN+nYk=")
+ki2.loginResult()
 
-#ki3 = LINETCR.LINE()
-#ki3.login(token="EoTaHjbFSm5Q4uSw9nD8.TDGC/4U6kG8mrZHlHb4Xsa.5GnU4dc+9495v9xtFbXwBQbj8Mkh1Tf9eo/QyyHDPQA=")
-#ki3.loginResult()
+ki3 = LINETCR.LINE()
+ki3.login(token="EpqO1qwAOxwJFLasYGO3.iZGepSr4S3ocUb9d+YflyW.Jdaknmt0JYL2cXCTl4ow7Tt9ypNjLX+S5jyLTt7TZFk=")
+ki3.loginResult()
 
 #ki4 = LINETCR.LINE()
 #ki4.login(token="Eov6BKJXHfTv7j3CRHU5.aOeodX8FNJewWK5vf5P9fq.LnPl7aQDvd/bjbou+L2w1lvh/ioHsSUQYDfd/swfrZA=")
@@ -289,11 +289,11 @@ helpMessage4 ="""
 ║✰ บินแม่ง ➠สั่งคิกเกอร์บินห้อง
 ╚══════════════════════
 """
-KAC=[cl]
+KAC=[cl,ki1,ki2,ki3]
 mid = cl.getProfile().mid
-#Amid1 = ki1.getProfile().mid
-#Amid2 = ki2.getProfile().mid
-#Amid3 = ki3.getProfile().mid
+Amid1 = ki1.getProfile().mid
+Amid2 = ki2.getProfile().mid
+Amid3 = ki3.getProfile().mid
 #Amid4 = ki4.getProfile().mid
 #Amid5 = ki5.getProfile().mid
 #Amid6 = ki6.getProfile().mid
@@ -310,8 +310,8 @@ autoinvite = []
 autoleaveroom = []
 targets = []
 mid = cl.getProfile().mid
-Bots = ["ub027c972ec33cb63aeef26707cb9860a",mid]
-self = ["ub027c972ec33cb63aeef26707cb9860a",mid]
+Bots = ["ub027c972ec33cb63aeef26707cb9860a",Amid1]
+self = ["ub027c972ec33cb63aeef26707cb9860a",Amid1]
 admin = "ub027c972ec33cb63aeef26707cb9860a"
 admsa = "ub027c972ec33cb63aeef26707cb9860a"
 owner = "ub027c972ec33cb63aeef26707cb9860a"
@@ -411,23 +411,23 @@ mybackup.statusMessage = contact.statusMessage
 mybackup.pictureStatus = contact.pictureStatus
 
 
-#contact = ki1.getProfile()
-#backup = ki1.getProfile()
-#backup.displayName = contact.displayName
-#backup.statusMessage = contact.statusMessage
-#backup.pictureStatus = contact.pictureStatus
+contact = ki1.getProfile()
+backup = ki1.getProfile()
+backup.displayName = contact.displayName
+backup.statusMessage = contact.statusMessage
+backup.pictureStatus = contact.pictureStatus
 
-#contact = ki2.getProfile()
-#backup = ki2.getProfile()
-#backup.displayName = contact.displayName
-#backup.statusMessage = contact.statusMessage
-#backup.pictureStatus = contact.pictureStatus
+contact = ki2.getProfile()
+backup = ki2.getProfile()
+backup.displayName = contact.displayName
+backup.statusMessage = contact.statusMessage
+backup.pictureStatus = contact.pictureStatus
 
-#contact = ki3.getProfile()
-#backup = ki3.getProfile()
-#backup.displayName = contact.displayName
-#backup.statusMessage = contact.statusMessage
-#backup.pictureStatus = contact.pictureStatus
+contact = ki3.getProfile()
+backup = ki3.getProfile()
+backup.displayName = contact.displayName
+backup.statusMessage = contact.statusMessage
+backup.pictureStatus = contact.pictureStatus
 
 #contact = ki4.getProfile()
 #backup = ki4.getProfile()

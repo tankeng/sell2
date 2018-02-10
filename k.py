@@ -411,23 +411,23 @@ mybackup.statusMessage = contact.statusMessage
 mybackup.pictureStatus = contact.pictureStatus
 
 
-contact = ki1.getProfile()
-backup = ki1.getProfile()
-backup.displayName = contact.displayName
-backup.statusMessage = contact.statusMessage
-backup.pictureStatus = contact.pictureStatus
+#contact = ki1.getProfile()
+#backup = ki1.getProfile()
+#backup.displayName = contact.displayName
+#backup.statusMessage = contact.statusMessage
+#backup.pictureStatus = contact.pictureStatus
 
-contact = ki2.getProfile()
-backup = ki2.getProfile()
-backup.displayName = contact.displayName
-backup.statusMessage = contact.statusMessage
-backup.pictureStatus = contact.pictureStatus
+#contact = ki2.getProfile()
+#backup = ki2.getProfile()
+#backup.displayName = contact.displayName
+#backup.statusMessage = contact.statusMessage
+#backup.pictureStatus = contact.pictureStatus
 
-contact = ki3.getProfile()
-backup = ki3.getProfile()
-backup.displayName = contact.displayName
-backup.statusMessage = contact.statusMessage
-backup.pictureStatus = contact.pictureStatus
+#contact = ki3.getProfile()
+#backup = ki3.getProfile()
+#backup.displayName = contact.displayName
+#backup.statusMessage = contact.statusMessage
+#backup.pictureStatus = contact.pictureStatus
 
 #contact = ki4.getProfile()
 #backup = ki4.getProfile()

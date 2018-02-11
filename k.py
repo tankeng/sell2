@@ -4693,7 +4693,7 @@ http://line.me/ti/p/09T2waRE7l
                  if jml > 500:
                      print "Terlalu Banyak Men 500+"
                  cnt = Message()
-                 cnt.text = "จำนวนสมาชิกห้องนี้ 👉 :" + str(jml) +  " คน"
+                 cnt.text = "จำนวนสมาชิกห้องนี้ 👉 : " + str(jml) +  " คน"
                  cnt.to = msg.to
                  cl.sendMessage(cnt)
 

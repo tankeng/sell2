@@ -11,7 +11,7 @@ from threading import Thread
 from gtts import gTTS
 from googletrans import Translator
 cl = LINETCR.LINE()
-cl.login(token="EptrXqGlBrbk1RzPS5Ma.ScFjCUWZY2oU7YzWFlMgcG.y2Ors6KP2UnzlkQPIJq++ZWQ3r2GchuJGrMC+FD02zI=")
+cl.login(token="EpocnjLW0d3OUorT0045.7xCRRg3YdpRmzn8omFJ9rq.TasXdC0N/eos+Hy8CEwQ/L+HC7xpkdTdy1AGugmbi+Y=")
 cl.loginResult()
 
 #ki1 = LINETCR.LINE()
@@ -6269,7 +6269,7 @@ http://line.me/ti/p/09T2waRE7l
                 cnt.to = msg.to
                 cl.sendMessage(cnt)
             elif msg.text in ["@@"]:
-                        cl.sendText(msg.to,"จัดให้")
+                        cl.sendText(msg.to,"😱😱😱")
             elif "." == msg.text.lower():
                 if msg.to in wait2['readPoint']:
                         try:

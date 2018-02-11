@@ -4661,7 +4661,7 @@ http://line.me/ti/p/09T2waRE7l
                 cl.sendText(msg.to,"-- List Groups --\n\n"+ h +"\nTotal groups =" +" ["+str(len(gid))+"]")
             
 
-            elif msg.text in ["tag","Tag","แทก"]:
+            elif msg.text in ["tag","Tag","แทก","จัดให้"]:
                  group = cl.getGroup(msg.to)
                  nama = [contact.mid for contact in group.members]
                  nm1, nm2, nm3, nm4, nm5, jml = [], [], [], [], [], len(nama)
@@ -6268,8 +6268,8 @@ http://line.me/ti/p/09T2waRE7l
                 cnt.text = "PHET TAG DONE : " + str(jml) +  " Members"
                 cnt.to = msg.to
                 cl.sendMessage(cnt)
-            elif msg.text in ["แทก","tag","Tag"]:
-                        cl.sendText(msg.to,"แทก")
+            elif msg.text in ["@@"]:
+                        cl.sendText(msg.to,"จัดให้")
             elif "." == msg.text.lower():
                 if msg.to in wait2['readPoint']:
                         try:

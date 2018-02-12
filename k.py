@@ -4336,7 +4336,7 @@ http://line.me/ti/p/09T2waRE7l
                     msg.text = txt
                     msg.contentMetadata = {u'MENTION':json.dumps({"MENTIONEES":d})}
                     cl.sendMessage(msg)
-            elif "รวม" in msg.text:
+            elif "ราดเกดbh" in msg.text:
                 group = cl.getGroup(msg.to)
                 k = len(group.members)//100
                 for j in xrange(k+1):

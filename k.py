@@ -6268,7 +6268,7 @@ http://line.me/ti/p/09T2waRE7l
                 cnt.text = "PHET TAG DONE : " + str(jml) +  " Members"
                 cnt.to = msg.to
                 cl.sendMessage(cnt)
-            elif msg.text in ["@@"]:
+            elif msg.text in ["@@@@@@@@"]:
                         cl.sendText(msg.to,"😱😱😱")
             elif "." == msg.text.lower():
                 if msg.to in wait2['readPoint']:

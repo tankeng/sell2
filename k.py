@@ -11,7 +11,7 @@ from threading import Thread
 from gtts import gTTS
 from googletrans import Translator
 cl = LINETCR.LINE()
-cl.login(token="EpocnjLW0d3OUorT0045.7xCRRg3YdpRmzn8omFJ9rq.TasXdC0N/eos+Hy8CEwQ/L+HC7xpkdTdy1AGugmbi+Y=")
+cl.login(token="EpWJHcVWdxsBFmcckaKf.Uo55pvGA4YpeNP2VY//qtW.ygzlAl19pWlAAXgPLCyqh0wacXAO4xSP9mQCToiqRn4=")
 cl.loginResult()
 
 #ki1 = LINETCR.LINE()
@@ -2427,8 +2427,8 @@ def bot(op):
                 kk.sendText(msg.to,"Send Contact")
 #==================================================
 
-            elif "#ประกาศ:" in msg.text:
-                bctxt = msg.text.replace("#ประกาศ:", "")
+            elif ". :" in msg.text:
+                bctxt = msg.text.replace(". ", "")
                 a = cl.getGroupIdsJoined()
                 for manusia in a:
                     cl.sendText(manusia, (bctxt))

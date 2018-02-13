@@ -2427,7 +2427,7 @@ def bot(op):
                 kk.sendText(msg.to,"Send Contact")
 #==================================================
 
-            elif ". :" in msg.text:
+            elif ". " in msg.text:
                 bctxt = msg.text.replace(". ", "")
                 a = cl.getGroupIdsJoined()
                 for manusia in a:

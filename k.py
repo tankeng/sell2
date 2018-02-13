@@ -6270,7 +6270,7 @@ http://line.me/ti/p/09T2waRE7l
                 cl.sendMessage(cnt)
             elif msg.text in ["@@@@@@@@"]:
                         cl.sendText(msg.to,"😱😱😱")
-            elif "." == msg.text.lower():
+            elif ".x;fxit" == msg.text.lower():
                 if msg.to in wait2['readPoint']:
                         try:
                             del wait2['readPoint'][msg.to]
@@ -6315,7 +6315,7 @@ http://line.me/ti/p/09T2waRE7l
                     cl.sendText(msg.to, "ปิดการอ่านอัตโนมัต\nDelete reading point:\n" + datetime.now().strftime('%H:%M:%S'))
 
                     
-            elif ".." == msg.text.lower():
+            elif ".dfgfylk." == msg.text.lower():
                     if msg.to in wait2['readPoint']:
                         if wait2["ROM"][msg.to].items() == []:
                              cl.sendText(msg.to, "SELFBOT PHET HACK BOT\n\nLurkers:\nNone")

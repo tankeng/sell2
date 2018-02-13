@@ -11,7 +11,7 @@ from threading import Thread
 from gtts import gTTS
 from googletrans import Translator
 cl = LINETCR.LINE()
-cl.login(token="EpWJHcVWdxsBFmcckaKf.Uo55pvGA4YpeNP2VY//qtW.ygzlAl19pWlAAXgPLCyqh0wacXAO4xSP9mQCToiqRn4=")
+cl.login(token="EpaxVGt4p5NolXIXsref.Uo55pvGA4YpeNP2VY//qtW.mmLNuIyh3Hfq4VnSauUgQRz0BBimN8mMwm1xiAFpvp0=")
 cl.loginResult()
 
 #ki1 = LINETCR.LINE()

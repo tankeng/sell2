@@ -3816,14 +3816,14 @@ http://line.me/ti/p/09T2waRE7l
                      pass
 
 #-----------------------------------------------
-            elif msg.text in ["Url","ลิ้ง"]:
+            elif msg.text in ["Url","ขอลิ้ง"]:
                 if msg.toType == 2:
                     x = cl.getGroup(msg.to)
                     if x.preventJoinByTicket == True:
                         x.preventJoinByTicket = False
                         cl.updateGroup(x)
                     gurl = cl.reissueGroupTicket(msg.to)
-                    cl.sendText(msg.to,"[SELFBO PHET HACK BOT]\n\nline://ti/g/" + gurl)
+                    cl.sendText(msg.to,"[ลิ้งพร้อมใช้งาน]\n\nline://ti/g/" + gurl)
                 else:
                     if wait["lang"] == "JP":
                         cl.sendText(msg.to,"Can not be used outside the group")
